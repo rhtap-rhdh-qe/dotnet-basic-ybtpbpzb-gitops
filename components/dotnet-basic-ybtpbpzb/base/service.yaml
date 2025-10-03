@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: dotnet-basic-ybtpbpzb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: dotnet-basic-ybtpbpzb 
+  name: dotnet-basic-ybtpbpzb
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: dotnet-basic-ybtpbpzb 
